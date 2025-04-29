@@ -1,75 +1,80 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html> <!-- Menentukan tipe dokumen HTML5 -->
+<html lang="id"> <!-- Bahasa dokumen diset ke Bahasa Indonesia -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kontak | WanderWay</title>
+  <meta charset="UTF-8"> <!-- Encoding karakter UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Supaya responsif di perangkat mobile -->
+  <title>Kontak | WanderWay</title> <!-- Judul halaman di tab browser -->
+
+  <!-- Import CSS Bootstrap 5 untuk styling -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Import CSS kustom lokal -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- Navbar (navigasi utama) -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html">WanderWay</a>
+    <a class="navbar-brand" href="index.html">WanderWay</a> <!-- Logo brand -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span> <!-- Icon toggle untuk mobile -->
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+    <div class="collapse navbar-collapse" id="navbarNav"> <!-- Navigasi collapsible -->
+      <ul class="navbar-nav ms-auto"> <!-- Menu kanan -->
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Beranda</a>
+          <a class="nav-link" href="index.html">Beranda</a> <!-- Link ke beranda -->
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="destinasi.html">Destinasi</a>
+          <a class="nav-link" href="destinasi.html">Destinasi</a> <!-- Link ke destinasi -->
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Kontak</a>
+          <a class="nav-link active" aria-current="page" href="kontak.html">Kontak</a> <!-- Link aktif saat ini -->
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Kontak Section -->
+<!-- Bagian Kontak -->
 <div class="container">
   <div class="contact-section">
-    <h2 class="text-center mb-4">Hubungi WanderWay</h2>
+    <h2 class="text-center mb-4">Hubungi WanderWay</h2> <!-- Judul bagian kontak -->
+
     <div class="row">
-      
-      <!-- Form Kontak -->
-      <form action="success.html" method="post">
+      <!-- Formulir kontak -->
+      <form action="success.html" method="get"> <!-- Kirim data ke success.html -->
         <div class="mb-3">
           <label for="nama" class="form-label">Nama Lengkap</label>
-          <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda" required>
+          <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda" required> <!-- Input nama -->
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Alamat Email</label>
-          <input type="email" class="form-control" id="email" placeholder="nama@email.com" required>
+          <input type="email" class="form-control" id="email" placeholder="nama@email.com" required> <!-- Input email -->
         </div>
         <div class="mb-3">
           <label for="pesan" class="form-label">Pesan</label>
-          <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+          <textarea class="form-control" id="pesan" rows="4" placeholder="Tulis pesan Anda..." required></textarea> <!-- Input pesan -->
         </div>
-        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        <button type="submit" class="btn btn-primary">Kirim Pesan</button> <!-- Tombol kirim -->
       </form>
     </div>
   </div>
 </div>
 
+<!-- Footer -->
 <footer class="bg-light text-center text-muted py-4 mt-5">
   <div class="container">
-    <h5 class="mb-3">Hubungi Kami</h5>
-    <p class="mb-1"><strong>Email:</strong> wanderway@gmail.com</p>
-    <p class="mb-1"><strong>Telepon:</strong> +62 812-3456-7890</p>
-    <p class="mb-0"><strong>Alamat:</strong> Jl. Petualangan No. 1, Jakarta, Indonesia</p>
+    <h5 class="mb-3">Hubungi Kami</h5> <!-- Judul info kontak -->
+    <p class="mb-1"><strong>Email:</strong> wanderway@gmail.com</p> <!-- Info email -->
+    <p class="mb-1"><strong>Telepon:</strong> +62 812-3456-7890</p> <!-- Info telepon -->
+    <p class="mb-0"><strong>Alamat:</strong> Jl. Petualangan No. 1, Jakarta, Indonesia</p> <!-- Info alamat -->
   </div>
-  <small>&copy; 2025 WanderWay</small>
+  <small>&copy; 2025 WanderWay</small> <!-- Hak cipta -->
 </footer>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Aktifkan fitur JS Bootstrap -->
 </body>
 </html>
