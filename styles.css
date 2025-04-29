@@ -1,101 +1,102 @@
 /* Global Styles */
 body {
-    background: url('') no-repeat center center fixed;
-    background-color: #d7d7d781;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Memastikan tinggi body penuh */
+  background: url('') no-repeat center center fixed; /* Menetapkan gambar latar belakang dengan posisi tetap */
+  background-color: #d7d7d781; /* Warna latar belakang dengan sedikit transparansi */
+  font-family: 'Poppins', sans-serif; /* Mengatur font global menggunakan Poppins */
+  display: flex; /* Menggunakan flexbox untuk layout */
+  flex-direction: column; /* Menyusun elemen secara vertikal */
+  min-height: 100vh; /* Memastikan tinggi body penuh dengan viewport */
 }
-  
-  footer {
-    background-color: #f8f9fa;
-    color: #6c757d;
-    margin-top: auto; /* Mengatur footer agar selalu di bawah */
-}
-  
-  footer small {
-    color: #6c757d;
-  }
-  
-  /* Navbar Styles */
-  .navbar {
-    background-color: white;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-light .navbar-nav .nav-link {
-    color: #000;
-  }
-  
-  .navbar-light .navbar-nav .nav-link.active {
-    color: #007bff;
-  }
-  
-  .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: url('assets/image/mainbg.jpg') center/cover no-repeat;
-    color: rgb(71, 63, 63);
-    padding: 100px 20px;
-    text-align: center;
-    border-radius: 12px;
-    margin-top: 20px;
-    border: 1px solid #0000005f; /* Tambahan border ke hero */
-  }
-  .col > .card {
-    border: 1px solid #0000005f; /* Tambahan border ke card dalam col */
-    border-radius: 12px;
-    overflow: hidden; /* Biar gambar nggak keluar */
-  }
 
-  .destinasi-card img {
-    height: 250px;
-    object-fit: cover;
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-  }
-  .destinasi-card {
-    border: 2px solid #0000005f;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  .destinasi-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .contact-section {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-top: 50px;
-  }
-  .contact-info {
-    background-color: #e9f5ff;
-    padding: 20px;
-    border-radius: 12px;
-  }
-
-  .main-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+footer {
+  background-color: #f8f9fa; /* Warna latar belakang footer */
+  color: #6c757d; /* Warna teks footer */
+  margin-top: auto; /* Mengatur footer agar selalu berada di bawah */
 }
-  .success-message {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
+
+footer small {
+  color: #6c757d; /* Menetapkan warna teks untuk elemen <small> dalam footer */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: white; /* Warna latar belakang navbar */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan ringan pada navbar */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000; /* Menetapkan warna teks pada link navbar */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #007bff; /* Warna teks untuk link navbar yang aktif */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Menetapkan ukuran font untuk brand navbar */
+  font-weight: bold; /* Membuat teks brand navbar lebih tebal */
+}
+
+/* Hero Section */
+.hero {
+  background: url('assets/image/mainbg.jpg') center/cover no-repeat; /* Gambar latar belakang dengan posisi center dan efek cover */
+  color: rgb(71, 63, 63); /* Menetapkan warna teks dalam section hero */
+  padding: 100px 20px; /* Padding dalam hero section */
+  text-align: center; /* Menyusun teks di tengah */
+  border-radius: 12px; /* Membuat sudut bagian hero melengkung */
+  margin-top: 20px; /* Memberi jarak antara hero dan elemen sebelumnya */
+  border: 1px solid #0000005f; /* Menambahkan border tipis dengan transparansi */
+}
+
+.col > .card {
+  border: 1px solid #0000005f; /* Menambahkan border ke dalam card */
+  border-radius: 12px; /* Membuat sudut card melengkung */
+  overflow: hidden; /* Menghindari konten card keluar dari batasnya */
+}
+
+.destinasi-card img {
+  height: 250px; /* Menetapkan tinggi gambar di dalam card destinasi */
+  object-fit: cover; /* Memastikan gambar memenuhi area tanpa merubah aspek rasio */
+  width: 100%; /* Gambar mengambil seluruh lebar card */
+  border-radius: 8px 8px 0 0; /* Membuat sudut atas gambar melengkung */
+}
+.destinasi-card {
+  border: 2px solid #0000005f; /* Border lebih tebal pada card destinasi */
+  border-radius: 12px; /* Membuat sudut card destinasi melengkung */
+  overflow: hidden; /* Menyembunyikan bagian card yang keluar */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Menambahkan bayangan lembut pada card */
+  transition: transform 0.3s ease; /* Menambahkan efek transisi ketika card dipilih */
+}
+.destinasi-card:hover {
+  transform: translateY(-5px); /* Efek hover: card sedikit terangkat */
+}
+
+.contact-section {
+  background: white; /* Warna latar belakang section kontak */
+  padding: 40px; /* Padding di dalam section kontak */
+  border-radius: 12px; /* Membuat sudut melengkung */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Menambahkan bayangan ringan */
+  margin-top: 50px; /* Memberi jarak antara section kontak dan elemen sebelumnya */
+}
+.contact-info {
+  background-color: #e9f5ff; /* Warna latar belakang untuk informasi kontak */
+  padding: 20px; /* Padding di dalam contact-info */
+  border-radius: 12px; /* Membuat sudut contact-info melengkung */
+}
+
+.main-content {
+  flex: 1; /* Menyusun konten agar fleksibel */
+  display: flex; /* Menggunakan flexbox untuk layout */
+  justify-content: center; /* Menyusun konten di tengah secara horizontal */
+  align-items: center; /* Menyusun konten di tengah secara vertikal */
+  padding: 20px; /* Padding di sekitar konten utama */
+}
+.success-message {
+  background: white; /* Warna latar belakang untuk pesan sukses */
+  padding: 40px; /* Padding di dalam pesan sukses */
+  border-radius: 12px; /* Membuat sudut pesan sukses melengkung */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Menambahkan bayangan ringan */
+  max-width: 600px; /* Menetapkan lebar maksimal untuk pesan sukses */
+  width: 100%; /* Membuat pesan sukses memenuhi lebar konten */
+  text-align: center; /* Menyusun teks pesan sukses di tengah */
 }
